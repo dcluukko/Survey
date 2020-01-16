@@ -5,7 +5,7 @@
 
     <!-- styles  -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- sripts  -->
     <script src="js/jquery-3.4.1.js"></script>
@@ -16,61 +16,73 @@
 
 <body>
     <div class="container">
-        <h2>Which Golden Girls Character Are You?</h2>
-        <form>
-            <!-- text input -->
-            
-            <div class="form-group">
-                <label for="Question1">Briefly describe your perfect man:</label>
-                <input id="question1" class="form-control" type="text"></input>
-            </div>
-            <!-- radio buttons -->
-            <h2>What do you like to do in your freetime?</h2>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="freetime" value="dancing">
-                    Rocking the ballroom dance-a-thon!
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="freetime" value="cooking">
-                    Making a bomb marinara!
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="freetime" value="judge">
-                    Being an at-home Judge Judy.
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="freetime" value="dating">
-                    Going on a hot date.
-                </label>
-            </div>
-            <!-- drop down -->
-            <h2>What is your favorite beverage?</h2>
-            <select class="form-control" id="beverage">
-                <option value="1">St. Olaf Buttermilk</option>
-                <option value="2">Tea</option>
-                <option value="3">Zinfandel</option>
-                <option value="4">Whisky</option>
-            </select>
+        <h2 class="text-center">Which Golden Girls Character Are You?</h2>
+        <div class="col-md-8 col-md-offset-2">
+
+
+            <form>
+                <!-- text input -->
+
+                <div class="form-group">
+                    <label for="Question1">Briefly describe your perfect man:</label>
+                    <input id="question1" class="form-control" type="text"></input>
+                </div>
+                <!-- radio buttons -->
+                <h2>What do you like to do in your freetime?</h2>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="freetime" value="dancing">
+                        Rocking the ballroom dance-a-thon!
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="freetime" value="cooking">
+                        Making a bomb marinara!
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="freetime" value="judge">
+                        Being an at-home Judge Judy.
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="freetime" value="dating">
+                        Going on a hot date.
+                    </label>
+                </div>
+                <!-- drop down -->
+                <h2>What is your favorite beverage?</h2>
+                <select class="form-control" id="beverage">
+                    <option value="1">St. Olaf Buttermilk</option>
+                    <option value="2">Tea</option>
+                    <option value="3">Zinfandel</option>
+                    <option value="4">Whisky</option>
+                </select>
                 <!-- Color -->
-            <h2>What is your favorite color?</h2>
-            <div class="form-group">
-                <label for="color">What is your favorite color?</label>
-                <input id="color" class="form-control" type="color">
-            </div>
-            <!-- Birthday -->
-            <h2>What is your birthday?</h2>
-            <div class="form-group">
-                <label for="born">Date of birth:</label>
-                <input id="born" class="form-control" type="date">
-            </div>
-        </form>
+                <h2>What is your favorite color?</h2>
+                <div class="form-group">
+                    <label for="color">What is your favorite color?</label>
+                    <input id="color" class="form-control" type="color">
+                </div>
+                <!-- Birthday -->
+                <h2>What is your birthday?</h2>
+                <div class="form-group">
+                    <label for="born">Date of birth:</label>
+                    <input id="born" class="form-control" type="date">
+                </div>
+                <button id="submit" type="submit" class="btn btn-info">Submit to find out!</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container">
+
+        <div id="output">
+            Answer here:
+        </div>
     </div>
 
 </body>
