@@ -12,6 +12,8 @@ var answer;
         var girl = ggirls[random()];
         var outPut = $('#output');
 
+        // this funciton that calls itself if there is a matching golden girls name
+
         function printAnswer(){
             if(answer === girl){
                 girl = ggirls[random()];
@@ -22,8 +24,7 @@ var answer;
             }
         };
 
+        // this is running the function for the first time one the submit is clicked.
         printAnswer();
-
-
     });
 });
